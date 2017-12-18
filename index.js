@@ -84,7 +84,7 @@ function getWelcomeResponse(callback) {
 function getSayHello(myIntent, callback) {
 
     const cardTitle = myIntent.name;
-    let shouldEndSession = '';
+    var shouldEndSession = true;
     let firstName = myIntent.slots.FirstName.value;
     let sessionAttributes = {};
     let rempromptText = '';
@@ -92,7 +92,6 @@ function getSayHello(myIntent, callback) {
 
     if (firstName) {
         speechOutput = `Hi ${firstName}! Your name is spelled...`;
-        shouldEndSession = true;
     } else {
         speechOutput = 'I don\'t understand that. Can you repeat your request please?';
         repromptText = 'I don\'t understand that. Can you repeat your request please?';
