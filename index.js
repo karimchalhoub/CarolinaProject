@@ -85,7 +85,7 @@ function getSayHello(myIntent, callback) {
 
     const cardTitle = myIntent.name;
     const shouldEndSession = '';
-    let firstName = myIntent.name.slots.FirstName.value;
+    let firstName = myIntent.slots.FirstName.value;
     let sessionAttributes = {};
     let rempromptText = '';
 
