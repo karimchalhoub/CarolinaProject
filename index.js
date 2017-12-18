@@ -88,6 +88,7 @@ function getSayHello(myIntent, callback) {
     let firstName = myIntent.slots.FirstName.value;
     let sessionAttributes = {};
     let rempromptText = '';
+    let speechOutput = '';
 
     if (firstName) {
         speechOutput = `Hi ${firstName}! Your name is spelled...`;
