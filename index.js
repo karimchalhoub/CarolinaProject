@@ -89,7 +89,7 @@ function getSayHello(myIntent, callback) {
     let sessionAttributes = {};
     let rempromptText = '';
 
-    if (fistName) {
+    if (firstName) {
         speechOutput = `Hi ${firstName}! Your name is spelled...`;
         shouldEndSession = true;
     } else {
