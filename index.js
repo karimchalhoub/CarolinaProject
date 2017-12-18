@@ -68,7 +68,7 @@ function getWelcomeResponse(callback) {
     const sessionAttributes = {};
     const cardTitle = 'Welcome to Carolina Project';
     const speechOutput = 'Welcome to the Alexa Carolina Project! ' +
-        'I\'m only getting started. So I can\'t do too many things just yet.' + '
+        'I\'m only getting started. So I can\'t do too many things just yet.' +
         'For now, you can only say, Carolina, say hi to John, for example.';
 
     // If the user either does not reply to the welcome message or says something that is not
@@ -134,7 +134,7 @@ function buildResponse(sessionAttributes,title, output, repromptText, shouldEndS
                     text: repromptText,
                 },
             },
-            shouldEndSession,
-        };
-    };
+            shouldEndSession
+        }
+    }
 }
