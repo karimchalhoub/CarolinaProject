@@ -57,6 +57,7 @@ exports.handler = (event, context, callback) => {
         }
 
     } catch (err) {
+        console.log('Error: ' + err);
         callback(err);
     }
 }
@@ -92,6 +93,7 @@ function getSayHello(myIntent, callback) {
 
     if (firstName) {
         speechOutput = `Hi ${firstName}! Your name is spelled...`;
+        repromptText = 'I\'m listening';
     } else {
         speechOutput = 'I don\'t understand that. Can you repeat your request please?';
         repromptText = 'I don\'t understand that. Can you repeat your request please?';
