@@ -68,9 +68,10 @@ function getWelcomeResponse(callback) {
     // If we wanted to initialize the session to have some attributes we could add those here.
     const sessionAttributes = {};
     const cardTitle = 'Welcome to Carolina Project';
-    const speechOutput = 'Welcome to the Alexa Carolina Project! ' +
+    const speechOutput = 'Welcome to the Carolina! ' +
         'I\'m only getting started. So I can\'t do too many things just yet.' +
-        'For now, you can only say, Carolina, say hi to John, for example.';
+        'For now, all I know is that my name is Diana Carolina and my baby, Karim, is the best boyfriend' +
+        'any girl can ask for. Good bye!';
 
     // If the user either does not reply to the welcome message or says something that is not
     // understood, they will be prompted again with this text.
